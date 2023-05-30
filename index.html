@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-shadow generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">国際連合と協力して</header>
+    <div class="container">
+        <form id="appForm">
+            <div class="app-item">
+                <div class="header-space">
+                    <h2 class="app-header">Options</h2>
+                </div>
+                <div class="main-space">
+                    <label for="fontSize">Font-size</label>
+                    <input type="range" id="fontSize" min="20" max="80" step="1" value="60">
+
+                    <label for="offsetX">Offset X</label>
+                    <input type="range" id="offsetX" min="-25" max="25" step="1" value="0">
+
+                    <label for="offsetY">Offset Y</label>
+                    <input type="range" id="offsetY" min="-25" max="25" step="1" value="0">
+
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" min="0" max="25" step="1" value="10">
+                </div>
+            </div>
+
+            <div class="app-item">
+                <div class="header-space">
+                    <h2 class="app-header">Color</h2>
+                </div>
+                <div class="main-space">
+                    <label for="color">Shadow-color</label>
+                    <input type="color" name="color" id="color">
+
+                    <label for="text-color">text-color</label>
+                    <input type="color" name="text-color" id="text-color" value="#ffffff">
+
+                    <label for="opacity">Opacity</label>
+                    <input type="range" name="range" id="opacity">
+
+
+                </div>
+            </div>
+
+            <div class="app-item">
+                <div class="header-space">
+                    <h2 class="app-header">Result</h2>
+                </div>
+                <div class="main-space">
+                    <label for="hex-result">Color in HEX</label>
+                    <textarea name="hex" id="hex-result" cols="30" rows="10" class="textarea" readonly></textarea>
+
+                    <label for="rgba-result">Color in RGBA</label>
+                    <textarea name="rgba" id="rgba-result" cols="30" rows="10" class="textarea"readonly></textarea>
+                </div>
+            </div>
+        </form>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #353333;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    margin: 0;
+}
+input {
+    width: 200px;
+}
+.header {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    padding-top: 50px;
+    text-align: center;
+}
+.container {
+    margin: 0 auto;
+    max-width: 990px;
+}
+#appForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.app-item {
+    min-width: 250px;
+    text-align: center;
+}
+.header-space {
+    height: 50px;
+    background-color: #713b3b;
+}
+.app-header {
+    padding: 10px;
+}
+.main-space {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: #535353;
+    padding: 10px;
+}
+.textarea {
+    resize: none;
+    height: 60px;
+    width: 230px;
+}
+input[type="color"] {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+}
